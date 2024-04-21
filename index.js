@@ -87,7 +87,7 @@ readXlsxFile("./given.xlsx", { schema }).then(async ({ rows, errors }) => {
 
     fs.appendFileSync("zkrollup.txt", text);
 
-    /* // Generates question by using OpenAI
+    // Generates question by using OpenAI
     const questionResponse = await openai.createCompletion({
       model,
       prompt: `Write questions based on the text below\n\nText: ${text}\n\nQuestions:1.`,
@@ -138,6 +138,6 @@ readXlsxFile("./given.xlsx", { schema }).then(async ({ rows, errors }) => {
       } catch (err) {
         console.log(err);
       }
-    } */
+    }
   });
 });
