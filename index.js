@@ -52,7 +52,7 @@ const schema = {
 };
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "OPENAI_API_KEY",
 });
 const model = "text-davinci-003";
 const openai = new OpenAIApi(configuration);
